@@ -1,0 +1,10 @@
+{
+  "name": "wdd330_to_do_list_project",
+  "version": "1.0.0",
+  "description": "This is a free project (not a recipe class) I'm by my own developing this project in node",   "scripts": {    
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Robert Gerard Govia Suarez<go19001@byui.edu>",
+  "license": "ISC"
+}
