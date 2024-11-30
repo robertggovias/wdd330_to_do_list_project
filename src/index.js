@@ -1,6 +1,3 @@
-// TODO make cool stuff
+import App from "./App";
 
-const pepito = document.createElement('h1');
-pepito.textContent = "Hello ";
-
-document.getElementById('amigo').appendChild(pepito);
+document.getElementById('amigo').appendChild(App());
