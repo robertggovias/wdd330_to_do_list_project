@@ -5,7 +5,7 @@
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
-  "author": "Robert Gerard Govia Suarez<gov19001@byui.edu>"
+  "author": "Robert Gerard Govia Suarez<gov19001@byui.edu>",
   "dependencies": {
     "parcel": "^2.13.2"
   }
