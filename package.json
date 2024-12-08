@@ -10,5 +10,8 @@
   "dependencies": {
     "parcel": "^2.13.2",
     "prettier": "^3.4.1"
+  },
+  "devDependencies": {
+    "svgo": "^3.3.2"
   }
 }
