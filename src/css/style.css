@@ -2,7 +2,10 @@
 
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker:400");
 
-
+a:link{
+  text-decoration: none;
+  
+}
 @font-face {
   font-family: "RobotoCondensed-BoldItalic";
   font-style: italic;
@@ -41,7 +44,7 @@
  
   --font-size-l: 24.5px;
   --font-size-m: 21.1px;
-  --font-size-xl: 33px;
+  --font-size-xl: 1.5vw;
   --font-size-xxl: 35.5px;
   --font-size-xxxl: 38px;
   --font-size-xxxxl: 39.2px;
@@ -74,29 +77,50 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  overflow: hidden;
-  overflow-x: hidden;
+    position: relative;
+  
+  
+}
+.random_meal_container{
   position: relative;
-  max-width: 1920px;
-  min-height: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .random_meal{
-    display: flex;
-    justify-content: flex-end;
     height: 81px;    
-    position: relative;    
+    position: relative;
+    background-color: var(--peach);
+    display: flex;      
+    align-items: stretch;
+    left: 0px;
+    position: relative;
+    margin-top: 20px;
+    max-width: 890px;
+    min-width: 760px;       
+    border-radius: 4px 4px 35px 35px;
+}
+.random_meal_photo{
+  right: 140px;  
+  object-fit:cover;
+  position: relative;      
+  width: 110px;
+
+}
+.random_meal_text{
+  left: -8%;
+  position: relative;  
 }
 
 .logo {   
+  align-self: center;
   object-fit: cover;
-  position: absolute;
-  left: 30px;
-  top: 30px;
+  
+  padding: 50px;
   width: 200px;  
 }
-
-
 
 .search-div{
 
@@ -119,13 +143,13 @@ body{
 .search_title {
     letter-spacing: -0.61px;
     color: var(--carrot-orange);
-    font-family: var(--font-family-robotocondensed-bolditalic);
+    font-family: var(--font-family-permanent_marker);
     font-size: var(--font-size-xxxxxl);
     font-style: italic;
     font-weight: 400;
     height: auto;  
-    letter-spacing: 0.00px;
-    line-height: 47.6px;
+    letter-spacing: 2px;
+    padding-bottom: 35px;
     position:relative;
     text-align: center;
     
@@ -137,6 +161,9 @@ body{
 
 form {
     text-align: center;
+}
+form input::placeholder{
+  color: lightgray;
 }
 
 
@@ -231,7 +258,45 @@ form {
       font-weight: 400;
       
     }
+
+    /*Responsive mobile*/
+    @media screen and (min-width: 751px){
+      
+      :root { 
+        --carrot-orange: #f5881f;
+        --kabul: #5b4e43;
+        --outrageous-orange: #ff6347;
+        --peach: #ffe4b5;
+       
+        --font-size-l: 24.5px;
+        --font-size-m: 21.1px;
+        --font-size-xl: 2vw;
+        --font-size-xxl: 35.5px;
+        --font-size-xxxl: 38px;
+        --font-size-xxxxl: 39.2px;
+        --font-size-xxxxxl: 39.6px;}
+      
+            
+          }
     
+    @media screen and (max-width: 750px){
+      
+:root { 
+  --carrot-orange: #f5881f;
+  --kabul: #5b4e43;
+  --outrageous-orange: #ff6347;
+  --peach: #ffe4b5;
+ 
+  --font-size-l: 24.5px;
+  --font-size-m: 21.1px;
+  --font-size-xl: 3vw;
+  --font-size-xxl: 35.5px;
+  --font-size-xxxl: 38px;
+  --font-size-xxxxl: 39.2px;
+  --font-size-xxxxxl: 39.6px;}
+
+      
+    }
 
 
 
